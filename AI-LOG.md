@@ -25,3 +25,7 @@ Geändert/verstanden: Mehrere noch offene Funktionen und der computed-Aufruf mus
 Prompt: „Wie binde ich eine globale CSS-Datei in Vite ein und behebe den App.vue-Import?“
 Übernommen: Globaler CSS-Import in main.ts und relativer Import von ./App.vue.
 Geändert/verstanden: Globale Styles werden einmal in main.ts geladen; <style scoped> gilt dagegen nur innerhalb der jeweiligen Vue-Komponente.
+
+Prompt: „Nach dem Verschieben des Vite-Projekts erkennt TypeScript den Import von App.vue nicht mehr.“
+Übernommen: Ergänzung von `vite-env.d.ts` und einer Deklaration für Vue-Dateien in `shims-vue.d.ts`.
+Geändert/verstanden: TypeScript benötigt eine Typdeklaration für `.vue`-Dateien. Außerdem muss in VS Code der Projektordner geöffnet sein, in dem sich `package.json` und die TypeScript-Konfiguration befinden.
